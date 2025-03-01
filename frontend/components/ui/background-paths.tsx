@@ -54,6 +54,7 @@ export function BackgroundPaths({
     title = "Background Paths",
 }: {
     title?: string;
+    children?: React.ReactNode;
 }) {
     const words = title.split(" ");
 
