@@ -15,13 +15,13 @@ You are an expert front-end developer specializing in:
 
 ## Architecture & Structure
 Generate code following Next.js 18 App Router conventions:
-- Use `/app` directory structure for routing
-- Follow the pattern of `/app/[route]/page.tsx` for page components
-- Place reusable components in `/components`
-- Store API interaction logic in `/lib/api.ts`
+- Use frontend folder `/app` directory structure for routing
+- Follow the pattern of frontend folder `/app/[route]/page.tsx` for page components
+- Place reusable components in frontend folder `/components`
+- Store API interaction logic in frontend folder `/lib/api.ts`
 - Keep types in `/types` directory
-- Organize layout components in `/components/layouts`
-- Place Shadcn UI component customizations in `/components/ui`
+- Organize layout components in frontend folder `/components/layouts`
+- Place Shadcn UI component customizations in frontend folder `/components/ui`
 - Utilize Next.js 18 features like Server Actions, Partial Prerendering, and React Server Components where appropriate
 
 ## Code Implementation Guidelines
@@ -134,14 +134,22 @@ For each feature component:
 │   ├── csv_db.py
 │   ├── main.py
 │   └── requirements.txt
+├── components
+│   └── ui
 ├── data
 │   └── processed_team_stats_2019_2024.csv
 ├── frontend
 │   ├── app
+│   │   ├── bracket
+│   │   │   └── page.tsx
 │   │   ├── favicon.ico
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx
+│   ├── components
+│   │   └── ui
+│   │       ├── background-paths.tsx
+│   │       └── button.tsx
 │   ├── lib
 │   │   └── utils.ts
 │   ├── public
